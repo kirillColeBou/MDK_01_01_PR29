@@ -8,6 +8,6 @@ namespace pc_Club_Тепляков.Classes
     {
         public DbSet<Clubs> Clubs { get; set; }
         public ClubsContext() => Database.EnsureCreated();
-        protected override void OnConfiguration(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseMySql(Config.ConnectionConfig, Config.Version);
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseMySql(Config.ConnectionConfig, Config.Version);
     }
 }

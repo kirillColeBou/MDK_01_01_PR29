@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Images\" />
-    <Folder Include="Pages\Clubs\Elements\" />
+    <None Remove="Images\ic-club.png" />
+    <None Remove="Images\ic-user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Pages\Logins\" />
     <Folder Include="Pages\Users\Elements\" />
   </ItemGroup>
@@ -20,6 +23,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\ic-club.png" />
+    <Resource Include="Images\ic-user.png" />
   </ItemGroup>
 
 </Project>
