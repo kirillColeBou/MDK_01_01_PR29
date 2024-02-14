@@ -54,6 +54,7 @@ namespace pc_Club_Тепляков.Pages.Users
                 User.Duration = Convert.ToInt32(this.Duration.Text);
                 User.IdClub = AllClub.Clubs.Where(x => x.Name == IdClub.SelectedItem.ToString()).First().Id;
                 User.FIO = this.FIO.Text;
+                User.IdLogin = Pages.Logins.LoginWin.ClientLogin;
                 this.Main.AllUsers.Users.Add(this.User);
             }
             else

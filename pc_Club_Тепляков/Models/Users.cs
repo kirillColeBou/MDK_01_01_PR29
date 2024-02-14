@@ -11,5 +11,6 @@ namespace pc_Club_Тепляков.Models
         public DateTime RentStart { get; set; }
         public int Duration { get; set; }
         public int IdClub { get; set; }
+        public int IdLogin { get; set; }
     }
 }

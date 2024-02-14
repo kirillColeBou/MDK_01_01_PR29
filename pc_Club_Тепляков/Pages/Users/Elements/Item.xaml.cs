@@ -26,6 +26,8 @@ namespace pc_Club_Тепляков.Pages.Users.Elements
         public Item(Models.Users User, Main Main)
         {
             InitializeComponent();
+            if (Logins.LoginWin.ClientLogin == User.IdLogin || Logins.LoginWin.IsAdmin == true) BthItem.Visibility = Visibility.Visible;
+            else BthItem.Visibility = Visibility.Hidden;
             this.RentStart.Text = User.RentStart.ToString("yyyy-MM-dd");
             this.RentTime.Text = User.RentStart.ToString("HH:mm");
             this.Duration.Text = User.Duration.ToString();

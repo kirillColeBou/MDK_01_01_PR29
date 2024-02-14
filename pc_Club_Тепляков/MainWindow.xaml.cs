@@ -25,7 +25,7 @@ namespace pc_Club_Тепляков
         {
             InitializeComponent();
             init = this;
-            OpenPages(new Pages.Clubs.Main());
+            OpenPages(new Pages.Logins.LoginWin());
         }
 
         public void OpenPages(Page Page) => frame.Navigate(Page);
@@ -33,5 +33,7 @@ namespace pc_Club_Тепляков
         private void Clubs(object sender, RoutedEventArgs e) => OpenPages(new Pages.Clubs.Main());
 
         private void Users(object sender, RoutedEventArgs e) => OpenPages(new Pages.Users.Main());
+
+        private void BackLogin(object sender, RoutedEventArgs e) => OpenPages(new Pages.Logins.LoginWin());
     }
 }

@@ -28,15 +28,5 @@ namespace pc_Club_Тепляков.Pages.Users
         }
 
         private void AddUser(object sender, RoutedEventArgs e) => MainWindow.init.OpenPages(new Pages.Users.Add(this));
-
-        private void ClubMain(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void UserMain(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

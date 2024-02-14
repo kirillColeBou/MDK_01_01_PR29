@@ -23,20 +23,11 @@ namespace pc_Club_Тепляков.Pages.Clubs
         public Main()
         {
             InitializeComponent();
+            if(Pages.Logins.LoginWin.IsAdmin == false) BthAdd.Visibility = Visibility.Hidden;
             foreach (Models.Clubs Club in AllClub.Clubs)
                 parent.Children.Add(new Elements.Item(Club, this));
         }
 
         private void AddClub(object sender, RoutedEventArgs e) => MainWindow.init.OpenPages(new Pages.Clubs.Add(this));
-
-        private void ClubMain(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void UserMain(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
