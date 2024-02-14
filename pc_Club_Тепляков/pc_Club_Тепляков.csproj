@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <Folder Include="Pages\Logins\" />
-    <Folder Include="Pages\Users\Elements\" />
   </ItemGroup>
 
   <ItemGroup>

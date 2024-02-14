@@ -34,10 +34,6 @@ namespace pc_Club_Тепляков.Pages.Clubs
             }
         }
 
-        private void ClubMain(object sender, RoutedEventArgs e) => MainWindow.init.OpenPages(new Pages.Clubs.Main());
-
-        private void UserMain(object sender, RoutedEventArgs e) => MainWindow.init.OpenPages(new Pages.Users.Main());
-
         private void AddClub(object sender, RoutedEventArgs e)
         {
             if (this.Club == null)
